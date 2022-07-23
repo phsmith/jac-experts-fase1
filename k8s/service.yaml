@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: <>
-  namespace: <>
+  name: svc-app1
+  namespace: aluno-phillipe
 spec:
   ports:
   - name: http
@@ -10,6 +10,6 @@ spec:
     protocol: TCP
     targetPort: 5000
   selector:
-    <>: <>
+    app: app1
   sessionAffinity: None
   type: ClusterIP
